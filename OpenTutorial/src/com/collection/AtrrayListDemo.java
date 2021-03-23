@@ -29,7 +29,7 @@ public class AtrrayListDemo {
 //			.add라는 메소드는 모든 데이터타입을 수용한다.
 //			그렇게 하기 위해서는 .add메소드의 파라미터 데이터 타입이 Object여야 한다.
 //			큰거에 작은걸 담을때는 묵시적 형변환(자동으로 형변환)되니까....
-//			즉, Object타입을 String타입 변수에 담으려다보니 에러가 발생한다.
+//			즉, Object타입을 String타입 변수에 담으려다보니 에러가 발생한다..
 			System.out.println(al.get(i));
 		}
 	}
