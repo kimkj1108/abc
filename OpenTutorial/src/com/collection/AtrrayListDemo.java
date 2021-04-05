@@ -19,6 +19,7 @@ public class AtrrayListDemo {
 		al.add("one");
 		al.add("two");
 		al.add("three");
+//		추가하는 방법은 .add를 사용하는것이다.
 		//위와 같이 데이터를 추가해도 범위관련 에러가 나지 않는다.
 		for(int i = 0; i<al.size(); i++) {
 			//값을 불러올때도 일반 배열객체와는 다른 방법을 쓴다.
@@ -30,7 +31,16 @@ public class AtrrayListDemo {
 //			그렇게 하기 위해서는 .add메소드의 파라미터 데이터 타입이 Object여야 한다.
 //			큰거에 작은걸 담을때는 묵시적 형변환(자동으로 형변환)되니까....
 //			즉, Object타입을 String타입 변수에 담으려다보니 에러가 발생한다..
-			System.out.println(al.get(i));
+			System.out.println(al.get(i));//ArrayList는 변수.get(인덱스번호)의 형식으로 값을 가져온다.
+			
+//------------------------------------			
+			ArrayList<String> al2 = new ArrayList<String>();
+//			al2라고 하는 ArrayList 에 추가되는 값이 String타입이라고 제네릭으로 지정 해주는것이다.
+			
+			al2.add("hello");
+			al2.add("coding");
+			String value2 = al2.get(0);//위에서 스트링타입으로 제네릭을 통해 지정하였기에 형변환하지 않는다.
+			System.out.println(al2.get(0));
 		}
 	}
 
