@@ -8,7 +8,7 @@ public class SetDemo {
 		HashSet<Integer> A = new HashSet<Integer>();// A 라는HashSet컨테이너.
 //		HashSet<Iterator> A = new HashSet<Iterator>();
 //		제네릭설정을 오타냈더니 아래 값을 추가하는 명령어 부분에서 컴파일 에러가 발생된다.
-
+//	...
 		A.add(1);
 		A.add(2);
 		A.add(3);
